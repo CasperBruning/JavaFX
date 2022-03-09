@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FXH3/Balletje/Balletje.iml" filepath="$PROJECT_DIR$/FXH3/Balletje/Balletje.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH2/EindtoetsPeriode2/EindtoetsPeriode2.iml" filepath="$PROJECT_DIR$/FXH2/EindtoetsPeriode2/EindtoetsPeriode2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH2/FXH2_2.10/FXH2_2.10.iml" filepath="$PROJECT_DIR$/FXH2/FXH2_2.10/FXH2_2.10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH2/FXH2_2.14~2.9/FXH2_2.14~2.9.iml" filepath="$PROJECT_DIR$/FXH2/FXH2_2.14~2.9/FXH2_2.14~2.9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH2/FXH2_Oefening05/FXH2_Oefening05.iml" filepath="$PROJECT_DIR$/FXH2/FXH2_Oefening05/FXH2_Oefening05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH2/FXH2_Oefening06/FXH2_Oefening06.iml" filepath="$PROJECT_DIR$/FXH2/FXH2_Oefening06/FXH2_Oefening06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH2/FXH2_Oefening07/FXH2_Oefening07.iml" filepath="$PROJECT_DIR$/FXH2/FXH2_Oefening07/FXH2_Oefening07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH2/FXH2_OefeningX/FXH2_OefeningX.iml" filepath="$PROJECT_DIR$/FXH2/FXH2_OefeningX/FXH2_OefeningX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH3/FXH3.3/FXH3.3.iml" filepath="$PROJECT_DIR$/FXH3/FXH3.3/FXH3.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH3/FXH3_3..1/FXH3_3..1.iml" filepath="$PROJECT_DIR$/FXH3/FXH3_3..1/FXH3_3..1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH3/FXH3_3.1/FXH3_3.1.iml" filepath="$PROJECT_DIR$/FXH3/FXH3_3.1/FXH3_3.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH3/FXH3_3.2/FXH3_3.2.iml" filepath="$PROJECT_DIR$/FXH3/FXH3_3.2/FXH3_3.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH3/FXH3_3.3/FXH3_3.3.iml" filepath="$PROJECT_DIR$/FXH3/FXH3_3.3/FXH3_3.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH3/FXH3_3.4/FXH3_3.4.iml" filepath="$PROJECT_DIR$/FXH3/FXH3_3.4/FXH3_3.4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH4/FXH4.1/FXH4.1.iml" filepath="$PROJECT_DIR$/FXH4/FXH4.1/FXH4.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH4/FXH4.2/FXH4.2.iml" filepath="$PROJECT_DIR$/FXH4/FXH4.2/FXH4.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH4/FXH4.3/FXH4.3.iml" filepath="$PROJECT_DIR$/FXH4/FXH4.3/FXH4.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH4/FXH4.4/FXH4.4.iml" filepath="$PROJECT_DIR$/FXH4/FXH4.4/FXH4.4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH4/FXH4.5/FXH4.5.iml" filepath="$PROJECT_DIR$/FXH4/FXH4.5/FXH4.5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH4/ItsLearning/FXH4Rekenmachine/FXH4Rekenmachine.iml" filepath="$PROJECT_DIR$/FXH4/ItsLearning/FXH4Rekenmachine/FXH4Rekenmachine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH4/FXH4_0.1/FXH4_0.1.iml" filepath="$PROJECT_DIR$/FXH4/FXH4_0.1/FXH4_0.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH2/FXoefenToets2b/FXoefenToets2b.iml" filepath="$PROJECT_DIR$/FXH2/FXoefenToets2b/FXoefenToets2b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH3/Galgje/Galgje.iml" filepath="$PROJECT_DIR$/FXH3/Galgje/Galgje.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OVERIG/HappyCasper/HappyCasper.iml" filepath="$PROJECT_DIR$/OVERIG/HappyCasper/HappyCasper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFX.iml" filepath="$PROJECT_DIR$/JavaFX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH4/Oefentoets/Oefentoets.iml" filepath="$PROJECT_DIR$/FXH4/Oefentoets/Oefentoets.iml" />
+    </modules>
+  </component>
+</project>
