@@ -9,7 +9,8 @@ public class Guihandler
     private Circle een,twee,drie,vier,vijf,zes,midden;
     private Circle eentwee,tweetwee,drietwee,viertwee,vijftwee,zestwee,middentwee;
     private Button gooi;
-    private Label tussenmuur1, tussenmuur2, tussenmuur3, uitkomst;
+    private Label tussenmuur1, tussenmuur2, tussenmuur3, uitkomst, aantalGegooideZessen;
+    private int aantalZessenGegooid = 0;
     public Guihandler(GridPane pane)
     {
         createElements(pane);
@@ -18,10 +19,10 @@ public class Guihandler
         Dobbelsteen dobbelsteen2 = new Dobbelsteen();
 
 
-        gooi.setOnAction(event -> setEyes(dobbelsteen1.returngooi(), dobbelsteen2.returngooi()));
+        gooi.setOnAction(event -> setEyes(dobbelsteen1.returngooi(), dobbelsteen1.checkSix(), dobbelsteen2.returngooi(), dobbelsteen2.checkSix()));
     }
 
-    public void setEyes(int number, int number2)
+    public void setEyes(int number,int checkSix ,int number2, int checkSix2)
     {
         setEyesInvisible();
         switch (number){
@@ -85,6 +86,10 @@ public class Guihandler
         //setUitkomst
         uitkomst.setText("Uitkomst: " + (number + number2));
 
+        aantalZessenGegooid+= checkSix + checkSix2;
+        aantalGegooideZessen.setText("Aantal gegooide zessen: " + aantalZessenGegooid);
+
+
     }
 
 
@@ -147,6 +152,7 @@ public class Guihandler
 
         //uitkomst
         uitkomst = new Label("Uitkomst: ");
+        aantalGegooideZessen = new Label("Aantal gegooide zessen: ");
 
         //knop
         gooi = new Button("Gooi");
@@ -182,6 +188,8 @@ public class Guihandler
 
         //uitkomst
         pane.add(uitkomst, 4,5,5,1);
+        pane.add(aantalGegooideZessen, 4,6,5,1);
+
 
         //knop
 //        pane.add(gooi,1,5, 3,1);
