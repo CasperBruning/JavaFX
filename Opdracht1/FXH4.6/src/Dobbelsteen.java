@@ -3,10 +3,12 @@ import java.util.Random;
 public class Dobbelsteen
 {
     Random rand = new Random();
-    int randomNumber = rand.nextInt(6) + 1;
+    private int number = 0;
 
     public int returngooi()
     {
+        int randomNumber = rand.nextInt(6) + 1;
+        this.number = randomNumber;
         return randomNumber;
     }
 
@@ -14,7 +16,7 @@ public class Dobbelsteen
     {
         int thrownSix = 0;
 
-        if (randomNumber==6)
+        if (number==6)
         {
             thrownSix += 1;
         }
