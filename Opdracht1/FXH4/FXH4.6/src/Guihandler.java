@@ -192,7 +192,7 @@ public class Guihandler
 
 
         //knop
-//        pane.add(gooi,1,5, 3,1);
+        pane.add(gooi,1,5, 3,1);
     }
 
 }
