@@ -41,13 +41,11 @@ public class Guihandler
         try
         {
             double getal = Double.parseDouble(invoer);
-            if (Double.isNaN(getal) == true)
+            double resultaat = Math.sqrt(getal);
+            if (Double.isNaN(resultaat) == true)
             {
-                uitvoervak.setText("Voer een geheel getal in");
-            }
-            else if (getal >= 0)
-            {
-                double resultaat = Math.sqrt(getal);
+                uitvoervak.setText("Voer een positief getal in");
+            } else {
                 uitvoervak.setText("" + resultaat);
             }
         }
