@@ -1,4 +1,5 @@
 import javafx.geometry.Insets;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -27,33 +28,45 @@ public class Guihandler
 
     public void berekenBMI()
     {
-        double gewicht = Double.parseDouble(textFieldGewicht.getText());
-        double lengteInMeter = Double.parseDouble(textFieldLengte.getText()) / 100;
-        double bmi = gewicht / (lengteInMeter * lengteInMeter);
-        labelBMI.setText("BMI: " + df.format(bmi));
-        if (bmi < 18.5)
+        try
         {
-            cirkel.setFill(Color.ORANGE);
-            labelBetekenis.setText("Betekenis: Ondergewicht");
+            double gewicht = Double.parseDouble(textFieldGewicht.getText());
+            double lengteInMeter = Double.parseDouble(textFieldLengte.getText()) / 100;
+            double bmi = gewicht / (lengteInMeter * lengteInMeter);
+            labelBMI.setText("BMI: " + df.format(bmi));
+            if (bmi < 18.5)
+            {
+                cirkel.setFill(Color.ORANGE);
+                labelBetekenis.setText("Betekenis: Ondergewicht");
+            } else if (bmi >= 18.5 && bmi < 25)
+            {
+                cirkel.setFill(Color.GREEN);
+                labelBetekenis.setText("Betekenis: Gezond Gewicht");
+            } else if (bmi >= 25 && bmi < 30)
+            {
+                cirkel.setFill(Color.ORANGE);
+                labelBetekenis.setText("Betekenis: overgewicht");
+            } else if (bmi >= 30)
+            {
+                cirkel.setFill(Color.RED);
+                labelBetekenis.setText("Betekenis: Ernstig Overgewicht");
+            }
         }
-        else if (bmi >= 18.5 && bmi < 25)
+        catch (NumberFormatException e)
         {
-            cirkel.setFill(Color.GREEN);
-            labelBetekenis.setText("Betekenis: Gezond Gewicht");
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setHeaderText("Er is een fout opgetreden");
+            alert.setContentText("Kijk goed of je de nummers goed ingevuld hebt. gebruik GEEN komma's");
+            alert.showAndWait();
         }
-        else if (bmi >= 25 && bmi <30)
+        catch (Exception e)
         {
-            cirkel.setFill(Color.ORANGE);
-            labelBetekenis.setText("Betekenis: overgewicht");
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText("Er is een onbekende fout opgetreden");
+            alert.setContentText(e.getMessage());
+            alert.showAndWait();
         }
-        else if (bmi >= 30)
-        {
-            cirkel.setFill(Color.RED);
-            labelBetekenis.setText("Betekenis: Ernstig Overgewicht");
-        }
-
     }
-
 
     private void createElements(GridPane pane)
     {
