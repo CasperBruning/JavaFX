@@ -1,3 +1,4 @@
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -30,6 +31,10 @@ public class Guihandler
         }
         catch(NumberFormatException e)
         {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setHeaderText("Er is een fout opgetreden");
+            alert.setContentText("Voer een heel getal in");
+            alert.show();
             outputLBL.setText("Voer een heel getal in binnen de 0 en de 10");
         }
         catch (Exception e)
@@ -46,7 +51,7 @@ public class Guihandler
 
         pane.add(inputLBL,1,1);
         pane.add(inputTXT,2,1);
-        pane.add(outputLBL,1,3);
+        pane.add(outputLBL,1,3,2,2);
         pane.add(knopje,1,2);
     }
 }
