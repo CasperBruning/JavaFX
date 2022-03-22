@@ -1,4 +1,5 @@
 import javafx.geometry.Insets;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -21,14 +22,32 @@ public class Guihandler
     }
 
     public void bereken(Kassa kassa){
-        double bedrag = Double.parseDouble(invoer.getText());
-        kassa.telOp(bedrag);
+        try
+        {
+            double bedrag = Double.parseDouble(invoer.getText());
+            kassa.telOp(bedrag);
 
-        uitvoerSubtotaal.setText(String.valueOf(kassa.getSubtotaal()));
-        uitvoerBTW.setText(String.valueOf(kassa.berekenBTW()));
-        uitvoerTotaalExBTW.setText(String.valueOf(kassa.berekenSubtotaalExBTW()));
-        uitvoerTotaal.setText(String.valueOf(kassa.getSubtotaal()));
-        invoer.setText("");
+            uitvoerSubtotaal.setText(String.valueOf(kassa.getSubtotaal()));
+            uitvoerBTW.setText(String.valueOf(kassa.berekenBTW()));
+            uitvoerTotaalExBTW.setText(String.valueOf(kassa.berekenSubtotaalExBTW()));
+            uitvoerTotaal.setText(String.valueOf(kassa.getSubtotaal()));
+            invoer.setText("");
+        }
+        catch (NumberFormatException e )
+        {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setHeaderText("Er is een fout opgetreden");
+            alert.setContentText("Voer geen letters of komma's in. gebruik hiervoor een punt");
+            alert.showAndWait();
+        }
+        catch (Exception e )
+        {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText("Er is een onbekende fout opgetreden");
+            alert.setContentText(e.getMessage());
+            alert.showAndWait();
+        }
+
     }
 
     public void reset(Kassa kassa)
