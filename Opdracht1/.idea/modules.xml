@@ -28,14 +28,19 @@
       <module fileurl="file://$PROJECT_DIR$/FXH4/ItsLearning/FXH4Rekenmachine/FXH4Rekenmachine.iml" filepath="$PROJECT_DIR$/FXH4/ItsLearning/FXH4Rekenmachine/FXH4Rekenmachine.iml" />
       <module fileurl="file://$PROJECT_DIR$/FXH4/FXH4_0.1/FXH4_0.1.iml" filepath="$PROJECT_DIR$/FXH4/FXH4_0.1/FXH4_0.1.iml" />
       <module fileurl="file://$PROJECT_DIR$/FXH5/FXH5.1/FXH5.1.iml" filepath="$PROJECT_DIR$/FXH5/FXH5.1/FXH5.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH5/FXH5.10/FXH5.10.iml" filepath="$PROJECT_DIR$/FXH5/FXH5.10/FXH5.10.iml" />
       <module fileurl="file://$PROJECT_DIR$/FXH5/FXH5.2/FXH5.2.iml" filepath="$PROJECT_DIR$/FXH5/FXH5.2/FXH5.2.iml" />
       <module fileurl="file://$PROJECT_DIR$/FXH5/FXH5.4/FXH5.4.iml" filepath="$PROJECT_DIR$/FXH5/FXH5.4/FXH5.4.iml" />
       <module fileurl="file://$PROJECT_DIR$/FXH5/FXH5.5/FXH5.5.iml" filepath="$PROJECT_DIR$/FXH5/FXH5.5/FXH5.5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH5/FXH5.6/FXH5.6.iml" filepath="$PROJECT_DIR$/FXH5/FXH5.6/FXH5.6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH5/FXH5.9/FXH5.9.iml" filepath="$PROJECT_DIR$/FXH5/FXH5.9/FXH5.9.iml" />
       <module fileurl="file://$PROJECT_DIR$/FXH2/FXoefenToets2b/FXoefenToets2b.iml" filepath="$PROJECT_DIR$/FXH2/FXoefenToets2b/FXoefenToets2b.iml" />
       <module fileurl="file://$PROJECT_DIR$/FXH3/Galgje/Galgje.iml" filepath="$PROJECT_DIR$/FXH3/Galgje/Galgje.iml" />
       <module fileurl="file://$PROJECT_DIR$/OVERIG/HappyCasper/HappyCasper.iml" filepath="$PROJECT_DIR$/OVERIG/HappyCasper/HappyCasper.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaFX.iml" filepath="$PROJECT_DIR$/JavaFX.iml" />
       <module fileurl="file://$PROJECT_DIR$/FXH4/Oefentoets/Oefentoets.iml" filepath="$PROJECT_DIR$/FXH4/Oefentoets/Oefentoets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OefentoetsFXH5/OefentoetsFXH5.iml" filepath="$PROJECT_DIR$/OefentoetsFXH5/OefentoetsFXH5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXH5/canvas/canvas.iml" filepath="$PROJECT_DIR$/FXH5/canvas/canvas.iml" />
     </modules>
   </component>
 </project>

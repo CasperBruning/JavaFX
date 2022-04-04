@@ -16,6 +16,7 @@ public class Guihandler
 
     private TextArea listarea;
     private Button btn;
+    private TextField text;
 
     private Canvas canvas;
     private GraphicsContext gc;
@@ -25,37 +26,31 @@ public class Guihandler
     {
         listarea = new TextArea();
         listarea.setMaxWidth(200);
+        listarea.setEditable(false);
+        text = new TextField();
         btn = new Button("vul in");
 
-        listarea.relocate(0, 200);
-        btn.relocate(0, 100);
+        pane.add(text,1,1);
+        pane.add(btn,1,2);
+        pane.add(listarea,1,3);
 
-        hbox = new HBox();
-        hbox.setAlignment(Pos.BASELINE_CENTER);
-        hbox.getChildren().addAll(listarea, btn);
-
-        canvas = new Canvas(150, 250);
-        gc = canvas.getGraphicsContext2D();
-        pane.getChildren().addAll(hbox, canvas);
 
         btn.setOnAction(event -> tableMethod());
 
 
     }
-
     private void tableMethod()
     {
         try
         {
-            listarea.clear();
-            int waarde = 0;
-            for (int i = 0; i < 1001; i++)
+            int jaartal = Integer.parseInt(text.getText());
+            if (jaartal%400 == 0)
             {
-                waarde += i;
-
+                listarea.setText("Het is een schikkeljaar");
+            } else
+                {
+                listarea.setText("Het is geen schikkeljaar");
             }
-            listarea.setText(waarde + "");
-
         } catch (NumberFormatException e)
         {
             Alert alert = new Alert(Alert.AlertType.WARNING);
@@ -69,6 +64,6 @@ public class Guihandler
             alert.setContentText(e.getMessage());
             alert.showAndWait();
         }
-
     }
+
 }
