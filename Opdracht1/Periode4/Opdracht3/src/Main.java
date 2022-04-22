@@ -10,8 +10,8 @@ public class Main extends Application
     {
         GridPane root = new GridPane();
         Guihandler gui = new Guihandler(root);
-        primaryStage.setTitle("Kassa");
-        primaryStage.setScene(new Scene(root, 1080, 1024));
+        primaryStage.setTitle("test");
+        primaryStage.setScene(new Scene(root, 520, 150));
         primaryStage.show();
     }
 

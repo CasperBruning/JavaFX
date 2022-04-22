@@ -1,5 +1,6 @@
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -22,7 +23,7 @@ public class Guihandler
     {
         createElements(pane);
         addElements(pane);
-        draw();
+//        draw();
         duitslandBTN.setOnAction(event -> duitsland());
         engelandBTN.setOnAction(event -> engeland());
         frankrijkBTN.setOnAction(event -> frankrijk());
@@ -101,21 +102,61 @@ public class Guihandler
     }
 
     private void duitsland(){
-        duitsland.setPunten(Integer.parseInt(puntenInvoerTXT.getText()));
-        draw();
+        try
+        {
+            duitsland.setPunten(Integer.parseInt(puntenInvoerTXT.getText()));
+            draw();
+        }
+        catch(NumberFormatException e)
+        {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setHeaderText("Er is een fout opgetreden");
+            alert.setContentText("Voer een HEEL getal in");
+            alert.showAndWait();
+        }
     }
 
     private void engeland(){
-        engeland.setPunten(Integer.parseInt(puntenInvoerTXT.getText()));
-        draw();
+        try
+        {
+            engeland.setPunten(Integer.parseInt(puntenInvoerTXT.getText()));
+            draw();
+        }
+        catch(NumberFormatException e)
+        {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setHeaderText("Er is een fout opgetreden");
+            alert.setContentText("Voer een HEEL getal in");
+            alert.showAndWait();
+        }
     }
 
     private void frankrijk(){
-        frankrijk.setPunten(Integer.parseInt(puntenInvoerTXT.getText()));
-        draw();
+        try
+        {
+            frankrijk.setPunten(Integer.parseInt(puntenInvoerTXT.getText()));
+            draw();
+        }
+        catch(NumberFormatException e)
+        {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setHeaderText("Er is een fout opgetreden");
+            alert.setContentText("Voer een HEEL getal in");
+            alert.showAndWait();
+        }
     }
     private void nederland(){
-        nederland.setPunten(Integer.parseInt(puntenInvoerTXT.getText()));
-        draw();
+        try
+        {
+            nederland.setPunten(Integer.parseInt(puntenInvoerTXT.getText()));
+            draw();
+        }
+        catch(NumberFormatException e)
+        {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setHeaderText("Er is een fout opgetreden");
+            alert.setContentText("Voer een HEEL getal in");
+            alert.showAndWait();
+        }
     }
 }
