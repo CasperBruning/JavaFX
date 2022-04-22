@@ -46,12 +46,12 @@ public class Guihandler
         {
             Double berekening = getal1 + getal2;
             String uitkomst = String.valueOf(berekening);
-            uitkomst.
+
         } else if (operatorUsed == 2)
         {
             Double berekening = getal1 - getal2;
             String uitkomst = String.valueOf(berekening);
-            uitkomst.setText(uitkomst);
+//            uitkomst.setText(uitkomst);
         } else {
             uitkomst.setText("Syntax Error");
         }
