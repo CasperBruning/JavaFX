@@ -49,6 +49,7 @@
       <module fileurl="file://$PROJECT_DIR$/boekenLijst/boekenLijst.iml" filepath="$PROJECT_DIR$/boekenLijst/boekenLijst.iml" />
       <module fileurl="file://$PROJECT_DIR$/FXH5/canvas/canvas.iml" filepath="$PROJECT_DIR$/FXH5/canvas/canvas.iml" />
       <module fileurl="file://$PROJECT_DIR$/comboboxOefenopdracht/comboboxOefenopdracht.iml" filepath="$PROJECT_DIR$/comboboxOefenopdracht/comboboxOefenopdracht.iml" />
+      <module fileurl="file://$PROJECT_DIR$/comboboxOefenopdrachtExtended/comboboxOefenopdrachtExtended.iml" filepath="$PROJECT_DIR$/comboboxOefenopdrachtExtended/comboboxOefenopdrachtExtended.iml" />
     </modules>
   </component>
 </project>
