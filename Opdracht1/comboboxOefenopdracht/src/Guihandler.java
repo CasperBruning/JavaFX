@@ -12,7 +12,6 @@ public class Guihandler
 
     private ComboBox<Artikel> cBox;
     private TextArea tArea;
-    private ArrayList<Artikel> artikelen;
     public Guihandler(GridPane pane)
     {
         pane.setVgap(5);
@@ -24,20 +23,24 @@ public class Guihandler
         cBox = new ComboBox<Artikel>();
 
         //--------------
-        pane.add(titel,1,5);
+        pane.add(titel,1,1);
         //--------------
-        pane.add(cBox,1,6);
+        pane.add(cBox,1,2);
         //--------------
-        pane.add(tArea,1,7, 2,1);
+        pane.add(tArea,1,3);
         tArea.setMaxSize(300,200);
         tArea.setEditable(false);
         //--------------
 
-        artikelen = maakArtikelen();
+        //Haal uit voorraad de arraylist van artikelen
+        Voorraad voorraad = new Voorraad();
 
-        ObservableList<Artikel>artikelenLijst=FXCollections.observableArrayList(artikelen);
+        ObservableList<Artikel>artikelenLijst=FXCollections.observableArrayList(voorraad.getArtikelen());
+
+        //Hier vul je de Combobox met de arraylist
         cBox.setItems(artikelenLijst);
 
+        //Met deze methode laat je het artikel zien
         cBox.setOnAction(event -> showArtikel());
 
 
@@ -48,20 +51,5 @@ public class Guihandler
         Artikel artikel = cBox.getValue();
         tArea.clear();
         tArea.appendText("Artikel: " + artikel.getArtikelNaam() + "\n" + "Voorraad: " + artikel.getArtikelAantal() + "\n" + "Prijs: " + artikel.getArtikelPrijs());
-    }
-
-    private ArrayList<Artikel> maakArtikelen(){
-        ArrayList<Artikel>artikelenList=new ArrayList<Artikel>();
-        Artikel artikel = new Artikel("appel", 5, 1.99);
-        artikelenList.add(artikel);
-        artikel = new Artikel("peer", 2, 4.99);
-        artikelenList.add(artikel);
-        artikel = new Artikel("banaan", 8, 2.99);
-        artikelenList.add(artikel);
-        artikel = new Artikel("perzik", 3, 0.99);
-        artikelenList.add(artikel);
-
-
-        return artikelenList;
     }
 }
