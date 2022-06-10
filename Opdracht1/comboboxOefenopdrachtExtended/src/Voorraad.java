@@ -17,6 +17,10 @@ public class Voorraad
 
     }
 
+    public void addArtikel(Artikel artikel){
+        artikelen.add(artikel);
+    }
+
     public ArrayList<Artikel> getArtikelen(){
         return artikelen;
     }
