@@ -11,7 +11,7 @@ public class Main extends Application
         GridPane root = new GridPane();
         Guihandler gui = new Guihandler(root);
         primaryStage.setTitle("test");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setScene(new Scene(root, 500, 275));
         primaryStage.show();
     }
 
