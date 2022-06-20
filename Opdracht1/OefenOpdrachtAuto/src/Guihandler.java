@@ -21,7 +21,6 @@ public class Guihandler
         titel = new Label("Kies een auto:");
         tArea = new TextArea();
         cBox = new ComboBox<Auto>();
-
         //--------------
         pane.add(titel,1,1);
         //--------------
@@ -32,14 +31,17 @@ public class Guihandler
         tArea.setEditable(false);
         //--------------
         // END UI ELEMENTS
+
+
         Garage garage = new Garage();
+
+        garage.maakAuto();
 
         ObservableList<Auto>autoLijst=FXCollections.observableArrayList(garage.returnAuto());
 
         cBox.setItems(autoLijst);
 
         cBox.setOnAction(event -> showAuto());
-
     }
 
     public void showAuto()
