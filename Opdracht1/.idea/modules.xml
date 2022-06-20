@@ -51,6 +51,7 @@
       <module fileurl="file://$PROJECT_DIR$/FXH5/canvas/canvas.iml" filepath="$PROJECT_DIR$/FXH5/canvas/canvas.iml" />
       <module fileurl="file://$PROJECT_DIR$/comboboxOefenopdracht/comboboxOefenopdracht.iml" filepath="$PROJECT_DIR$/comboboxOefenopdracht/comboboxOefenopdracht.iml" />
       <module fileurl="file://$PROJECT_DIR$/comboboxOefenopdrachtExtended/comboboxOefenopdrachtExtended.iml" filepath="$PROJECT_DIR$/comboboxOefenopdrachtExtended/comboboxOefenopdrachtExtended.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tandArtsAfsprakenApplicatie/tandArtsAfsprakenApplicatie.iml" filepath="$PROJECT_DIR$/tandArtsAfsprakenApplicatie/tandArtsAfsprakenApplicatie.iml" />
     </modules>
   </component>
 </project>
